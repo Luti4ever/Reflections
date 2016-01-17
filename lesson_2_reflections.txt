@@ -10,3 +10,39 @@ What value do you think it offers?
 Staging area jest zajebiste, poniewaz aktualizujemy tylko pliki, na których w danym momencie pracujemy
 (dodajac je przez git add), natomiast mozemy to przemyslec przed commit'em i ewentualnie dodac cos/usunac cos.
 W ten sposób nie nadpisujemy niepotrzebnie niezmienionych plików ;)
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+Moge porównac zawartosc stage z repo i zobaczyc, czy to co zmienilem ma sens logiczny w stosunku do tego co jest.
+Ewentualnie moge te zmiany wycofac przed commitem i dodac te pliki, które rzeczywiscie wprowadzaja logiczna
+zmiane.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Branch pozwala na przetestowanie nowej funkcjonalnosci przed jej wprowadzeniem do glównego programu. Ponadto
+jezeli zmiana ingeruje w kod glówny, mozna uniknac sytuacji spierdolenia wszystkiego jednym glupim ruchem.
+Jezeli odnajdziemy bug mozemy zajac sie jego naprawa pozostawiajac master (czyli PROD) taki jaki jest, bez grozby
+wylaczenia go.
+Kolejna bardzo wazna rzecz to mozliwosc zmiany kontekstu pracy. To jest poprostu SWIETNE. Jezeli nie radzimy sobie
+z jakims modulem lub akurat nie mamy ochoty sie nim zajmowac, przechodzimy do dzialajacego mastera i zajmujemy sie
+czym innym. Genialne! 
+
+How do the diagrams help you visualize the branch structure?
+
+To proste, dzieki temu mozemy zwizualizowac strukture i wiemy kiedy rozpoczelismy zmiany nad danym branch'em.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Rezultat jest taki, ze mamy nowa funkcjonalnosc w programie, bez niepotrzebnych przerw w jego dzialaniu.
+Reprezentacja jako "zjednoczonej" galezi coins i master jest dobra, poniewaz head zawiera teraz dane z obu branch'ów.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+PROS:
+> Faster
+> Smoothier
+> More effective
+
+CONS:
+> If we do not do this frequently, we can forget the context and there could be too many changes (dunno if cons thou -.-")
+> Automatic merge is really sensitive to formatting changes which is irritating
+
