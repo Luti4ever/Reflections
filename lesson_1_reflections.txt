@@ -1,0 +1,5 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+Puste repo jest po to zeby miec folder nowego projektu i w ten sposób monitorowac
+cala historie projektu od jego poczatku. Nowe repo nie zawiera commitów, a wszelkie
+zawarte w nim pliki trzeba do repo dodac.
