@@ -1,0 +1,12 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+Puste repo jest po to zeby miec folder nowego projektu i w ten sposób monitorowac
+cala historie projektu od jego poczatku. Nowe repo nie zawiera commitów, a wszelkie
+zawarte w nim pliki trzeba do repo dodac.
+
+How is the staging area different from the working directory and the repository? 
+What value do you think it offers?
+
+Staging area jest zajebiste, poniewaz aktualizujemy tylko pliki, na których w danym momencie pracujemy
+(dodajac je przez git add), natomiast mozemy to przemyslec przed commit'em i ewentualnie dodac cos/usunac cos.
+W ten sposób nie nadpisujemy niepotrzebnie niezmienionych plików ;)
